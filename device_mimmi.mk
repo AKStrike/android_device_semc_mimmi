@@ -7,9 +7,9 @@ $(call inherit-product-if-exists, vendor/semc/mimmi/device_mimmi-vendor.mk)
 
 
 # Discard inherited values and use our own instead.
-PRODUCT_NAME := U20i
+PRODUCT_NAME := X10 Mini Pro
 PRODUCT_DEVICE := mimmi
-PRODUCT_MODEL := U20i
+PRODUCT_MODEL := X10 Mini Pro
 
 ifeq ($(TARGET_PREBUILT_KERNEL),)
 LOCAL_KERNEL := device/semc/mimmi/kernel
@@ -51,9 +51,6 @@ PRODUCT_PACKAGES += \
 # Extra packages
 PRODUCT_PACKAGES += \
     Torch \
-    ADWLauncher \
-    Cyanbread \
-    Androidian \
     MimmiParts
 
 PRODUCT_COPY_FILES += \
@@ -163,7 +160,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.compcache.default=10 \
     ro.product.locale.region=US \
     persist.ro.ril.sms_sync_sending=1 \
-    net.bt.name=Android-MiniCM7
+    net.bt.name=Android-GingerDX
 
 # Enable ti hotspot
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -180,8 +177,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Theme Selection
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.sys.themeId=MiniCM7 \
-    persist.sys.themePackageName=com.darkdog.theme.minicm7
+    persist.sys.themeId=ICSandwich \
+    persist.sys.themePackageName=com.achep.theme.ICSandwich
 
 ## Extra prebuilt binaries
 PRODUCT_COPY_FILES += \
@@ -199,10 +196,8 @@ PRODUCT_COPY_FILES += \
    
 ## Themes
 PRODUCT_COPY_FILES += \
-    device/semc/mimmi/prebuilt/MiniCM7.apk:system/app/MiniCM7.apk \
-    device/semc/mimmi/prebuilt/OrangeHaze.apk:system/app/OrangeHaze.apk \
-    device/semc/mimmi/prebuilt/minicm.png:system/usr/res/minicm.png \
-    device/semc/mimmi/prebuilt/bootanimation.zip:/system/media/bootanimation.zip
+    device/semc/shakira/prebuilt/bootanimation.zip:/system/media/bootanimation.zip \
+    device/semc/shakira/prebuilt/ICSandwich.apk:/system/app/ICSandwich.apk
 
 ## A2SD and extra init files
 PRODUCT_COPY_FILES += \
@@ -216,3 +211,12 @@ PRODUCT_COPY_FILES += \
 ## Extra Cyanogen vendor files
 PRODUCT_COPY_FILES += \
     vendor/cyanogen/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml
+
+## GingerDX files
+PRODUCT_COPY_FILES += \
+    device/semc/shakira/prebuilt/GalleryDX.apk:/system/app/GalleryDX.apk \
+    device/semc/shakira/prebuilt/GDXUpdateNotify.apk:/system/app/GDXUpdateNotify.apk \
+    device/semc/shakira/prebuilt/HoloLauncher.apk:/system/app/HoloLauncher.apk \
+    device/semc/shakira/prebuilt/GPSCountryOptimizer.apk:/system/app/GPSCountryOptimizer.apk \
+    device/semc/shakira/prebuilt/libqpicjni87.so:/system/lib/libqpicjni87.so
+
