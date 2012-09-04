@@ -205,7 +205,7 @@ PRODUCT_COPY_FILES += \
     device/semc/mimmi/prebuilt/10apps2sd:system/etc/init.d/10apps2sd \
     device/semc/mimmi/prebuilt/05mountext:system/etc/init.d/05mountext \
     device/semc/mimmi/prebuilt/04modules:system/etc/init.d/04modules \
-    device/semc/mimmi/prebuilt/06minicm:system/etc/init.d/06minicm \
+    device/semc/mimmi/prebuilt/06gingerdx:system/etc/init.d/06gingerdx \
     device/semc/mimmi/prebuilt/zipalign:system/xbin/zipalign
     
 ## Extra Cyanogen vendor files
