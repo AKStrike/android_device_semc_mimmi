@@ -7,9 +7,9 @@ $(call inherit-product-if-exists, vendor/semc/mimmi/device_mimmi-vendor.mk)
 
 
 # Discard inherited values and use our own instead.
-PRODUCT_NAME := X10 Mini Pro
+PRODUCT_NAME := X10 MiniPro
 PRODUCT_DEVICE := mimmi
-PRODUCT_MODEL := X10 Mini Pro
+PRODUCT_MODEL := X10 MiniPro
 
 ifeq ($(TARGET_PREBUILT_KERNEL),)
 LOCAL_KERNEL := device/semc/mimmi/kernel
@@ -218,5 +218,5 @@ PRODUCT_COPY_FILES += \
     device/semc/shakira/prebuilt/GDXUpdateNotify.apk:/system/app/GDXUpdateNotify.apk \
     device/semc/shakira/prebuilt/HoloLauncher.apk:/system/app/HoloLauncher.apk \
     device/semc/shakira/prebuilt/GPSCountryOptimizer.apk:/system/app/GPSCountryOptimizer.apk \
-    device/semc/shakira/prebuilt/libqpicjni87.so:/system/lib/libqpicjni87.so
+    device/semc/shakira/prebuilt/libqpicjni88.so:/system/lib/libqpicjni88.so
 
